@@ -1,0 +1,73 @@
+<style>
+/*James Letts
+Database Management Systems
+12/04/2026
+Final Project*/
+.topnav {
+    width: auto;
+    padding: 0px 10px;
+    background: #f5f5f5;
+    border-bottom: 1px solid #ccc;
+    
+    display: flex;
+    justify-content: left;
+    align-items: normal;
+    
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+
+    background-color:rgb(255, 255, 255);
+    overflow: hidden;
+  }
+
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+/* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: blanchedalmond;
+    color: black;
+  }
+
+/* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: goldenrod;
+    color: rgb(0, 0, 0);
+  }
+
+  .banner-user {
+      color: #000000;
+      font-size: 0.95rem;
+      display: flex;
+      margin-left: auto;
+      flex-direction: column;     
+      justify-content: center;     
+      align-items: center;         
+  }
+
+  .banner-user span{
+    margin-left: 4px; 
+  }
+
+  </style>
+  <div class="topnav">
+    <a href="/">Home</a>
+    <a href="/placeholder">placeholder</a>
+    <a href="/search">placeholder</a>
+    <a class="active" href="/login">Login</a>
+
+    <div class="banner-user">
+      Logged in as <span id="usernameDisplay"></span>
+      <script>
+        const username = localStorage.getItem("username");
+        document.getElementById("usernameDisplay").innerText = username? username : "guest";
+      </script>
+    </div>
+  </div>

@@ -1,0 +1,14 @@
+{
+  "name": "multi-platform-playlists",
+  "version": "1.0.0",
+  "main": "src/startServer.js",
+  "scripts": {
+    "start": "node src/startServer.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "express-session": "^1.18.2",
+    "mysql2": "^3.15.3"
+  }
+}
